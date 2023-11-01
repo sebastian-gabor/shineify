@@ -1,0 +1,26 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 5rem;
+}
+
+.nav--brand {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.menu--list {
+  display: flex;
+}
+
+.menu--item {
+  margin: 0 0.7rem;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.menu--item:hover,
+.menu--item:focus {
+  color: #fff;
+}

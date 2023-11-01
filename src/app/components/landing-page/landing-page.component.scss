@@ -1,0 +1,30 @@
+.container {
+  --edge-size: 10%;
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  clip-path: polygon(
+    0% var(--edge-size),
+    var(--edge-size) 0%,
+    100% 0%,
+    100% calc(100% - var(--edge-size)),
+    calc(100% - var(--edge-size)) 100%,
+    0% 100%
+  );
+}
+
+.panel {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  color: #fff;
+  cursor: pointer;
+  flex: 0.5;
+  position: relative;
+  transition: flex 0.7s ease-in;
+}
+
+.panel.active {
+  flex: 5;
+}
