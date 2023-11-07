@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="packages">
+    <div class="package" *ngFor="let package of packages">
+      <img
+        class="package--image"
+        src="{{ package.pkgImg }}"
+        alt="{{ package.pkgType }}"
+      />
+      <h2 class="package--type">{{ package.pkgType }}</h2>
+      <p class="package--price">${{ package.pkgPrice }}</p>
+      <!-- <p class="package--description">{{ package.pkgDesc }}</p> -->
+    </div>
+  </div>
+</div>

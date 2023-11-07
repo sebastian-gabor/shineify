@@ -1,9 +1,0 @@
-<div class="container">
-  <div
-    *ngFor="let panel of panels"
-    class="panel"
-    [ngStyle]="{ 'background-image': 'url(' + panel.image + ')' }"
-    [ngClass]="{ active: panel.isActive }"
-    (click)="activatePanel(panel)"
-  ></div>
-</div>

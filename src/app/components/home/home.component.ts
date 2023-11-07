@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-landing-page',
-  templateUrl: './landing-page.component.html',
-  styleUrls: ['./landing-page.component.scss'],
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.scss'],
 })
-export class LandingPageComponent {
+export class HomeComponent {
   panels = [
     { isActive: true, image: 'assets/images/main-1.jpg' },
     { isActive: false, image: 'assets/images/main-2.jpg' },

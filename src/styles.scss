@@ -3,6 +3,9 @@
 :root {
   --background-color: #0d1f23;
   --text-color: #afb3b7;
+  --text-color-2: #0d1f23;
+  --card-background: #2d4a53;
+  --background-footer: #5a636a;
 }
 
 *,
@@ -13,9 +16,13 @@
 
 body {
   font-family: Montserrat, sans-serif;
+  scroll-behavior: smooth;
   background-color: var(--background-color);
   color: var(--text-color);
   margin: 0;
+}
+main {
+  padding: 0 5rem;
 }
 
 a {
@@ -25,4 +32,10 @@ a {
 
 li {
   list-style-type: none;
+}
+
+p,
+h2,
+h3 {
+  margin: 0;
 }

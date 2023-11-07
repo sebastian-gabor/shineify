@@ -11,6 +11,7 @@
     calc(100% - var(--edge-size)) 100%,
     0% 100%
   );
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
 .panel {
@@ -27,4 +28,35 @@
 
 .panel.active {
   flex: 5;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 5rem 0;
+}
+.about--title {
+  margin-bottom: 5rem;
+}
+.about--list {
+  display: flex;
+  text-align: center;
+}
+
+.about--item {
+  background-color: #69818d;
+  border-radius: 16px;
+  margin: 0 2rem;
+  padding: 2rem;
+}
+
+.about--image {
+  width: 33%;
+}
+
+.about--text {
+  color: var(--text-color-2);
+  font-weight: 600;
+  margin-top: 0.5rem;
 }

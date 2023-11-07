@@ -1,0 +1,48 @@
+.container {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.packages {
+  display: flex;
+  gap: 5rem;
+}
+
+.package {
+  position: relative;
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #132e35;
+  border-radius: 16px;
+  transition: all 0.2s ease-in;
+}
+
+.package:hover {
+  transform: scale(1.01);
+  background-color: #2d4a53;
+}
+.package--image {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 25px;
+}
+
+.package--type {
+  position: absolute;
+  left: 3.5rem;
+  top: 1.5rem;
+}
+
+.package--price {
+  position: absolute;
+  right: 3.5rem;
+  bottom: 3.5rem;
+  font-weight: 600;
+  font-size: 2rem;
+}

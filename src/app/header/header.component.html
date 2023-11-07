@@ -2,12 +2,25 @@
   <span class="nav--brand"><a href="#">Shineify</a></span>
   <div class="nav--menu">
     <ul class="menu--list">
-      <li class="menu--item"><a href="">Home</a></li>
-      <li class="menu--item"><a href="">About</a></li>
-      <li class="menu--item"><a href="">Packages</a></li>
-      <li class="menu--item"><a href="">Reviews</a></li>
-      <li class="menu--item"><a href="">Galery</a></li>
-      <li class="menu--item"><a href="">Contact</a></li>
+      <li
+        class="menu--item"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        <a routerLink="/">Home</a>
+      </li>
+      <li class="menu--item" routerLinkActive="active">
+        <a routerLink="/packages">Packages</a>
+      </li>
+      <li class="menu--item" routerLinkActive="active">
+        <a routerLink="/galery">Galery</a>
+      </li>
+      <li class="menu--item" routerLinkActive="active">
+        <a routerLink="/reviews">Reviews</a>
+      </li>
+      <li class="menu--item" routerLinkActive="active">
+        <a routerLink="/contact"> Contact</a>
+      </li>
       <li class="menu--item">
         <a href=""><i class="fa-brands fa-instagram"></i></a>
       </li>

@@ -1,0 +1,11 @@
+<div class="card" *ngFor="let review of reviews">
+  <img class="card--image" src="{{ review.rewImg }}" alt="" />
+  <div class="card--preview">
+    <h3>{{ review.rewName }}</h3>
+    <p><i class="fa-solid fa-star"></i> {{ review.rewRate }}</p>
+  </div>
+  <div class="card--details">
+    <h3>{{ review.rewTitle }}</h3>
+    <p>{{ review.rewDescription }}</p>
+  </div>
+</div>

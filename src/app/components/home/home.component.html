@@ -1,0 +1,37 @@
+<div class="container">
+  <div
+    *ngFor="let panel of panels"
+    class="panel"
+    [ngStyle]="{ 'background-image': 'url(' + panel.image + ')' }"
+    [ngClass]="{ active: panel.isActive }"
+    (click)="activatePanel(panel)"
+  ></div>
+</div>
+<div class="about">
+  <h1 class="about--title">Signify is your car dream</h1>
+
+  <ul class="about--list">
+    <li class="about--item">
+      <img class="about--image" src="assets/images/car-ext.png" alt="car-ext" />
+      <p class="about--text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      </p>
+    </li>
+    <li class="about--item">
+      <img class="about--image" src="assets/images/car-int.png" alt="car-int" />
+      <p class="about--text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      </p>
+    </li>
+    <li class="about--item">
+      <img
+        class="about--image"
+        src="assets/images/car-prod.png"
+        alt="car-prod"
+      />
+      <p class="about--text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      </p>
+    </li>
+  </ul>
+</div>

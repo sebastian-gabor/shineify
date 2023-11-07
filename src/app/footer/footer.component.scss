@@ -1,0 +1,22 @@
+/* FOOTER */
+
+.footer {
+  display: flex;
+  width: 100%;
+  padding: 48px 24px 32px;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: var(--background-footer);
+  margin-top: 5rem;
+}
+
+.caption {
+  max-width: 600px;
+  margin: 12px auto;
+  padding: 12px 8px;
+  color: var(--text-color);
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+}
