@@ -26,6 +26,10 @@
   transition: flex 0.7s ease-in;
 }
 
+ul {
+  padding: 0;
+}
+
 .panel.active {
   flex: 5;
 }

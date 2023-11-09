@@ -10,14 +10,12 @@ import { ReviewComponent } from './components/reviews/review/review.component';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { PackagesComponent } from './components/packages/packages.component';
-import { GaleryComponent } from './components/galery/galery.component';
 import { ContactComponent } from './components/contact/contact.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'packages', component: PackagesComponent },
-  { path: 'galery', component: GaleryComponent },
-  { path: 'reviews', component: ReviewComponent },
+  { path: 'reviews', component: ReviewsComponent },
   { path: 'contact', component: ContactComponent },
 ];
 
